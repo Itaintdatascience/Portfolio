@@ -1,4 +1,5 @@
 #Michael Frasco
+#7/14/2014
 #In response to the following article from Business Insider
 #http://www.businessinsider.com/the-most-financially-healthy-states-2014-7
 
@@ -81,3 +82,7 @@ loadings(fit2)
 plot(fit2, type='lines')
 fit2$scores
 biplot(fit2)
+
+pdf(file = "PCA_Biplot.pdf")
+biplot(fit2)
+dev.off()
